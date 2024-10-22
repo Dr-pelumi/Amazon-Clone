@@ -1,0 +1,151 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Poppins", serif;
+}
+
+.amazon-header{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   /* background-color: pink; */
+
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   height: 60px;
+
+   padding: 0 15px;
+   color: white;
+   background-color: rgb(25 23 19);
+   /* background: pink;  */
+
+
+}
+
+.amazon-header-left{
+   max-width: 180px;
+}
+
+
+.header-link{
+   display: inline-block;
+   padding: 6px;
+   text-decoration: none;
+   cursor: pointer;
+   border-radius: 2px;
+   border: 1px solid black;
+}
+
+.amazon-logo{
+   width: 100px;
+   margin-top: 10px;
+}
+
+.amazon-mobile-logo{
+   display: none;
+}
+@media (max-width: 575px){
+   .amazon-logo{
+      display: none;
+   }
+   .amazon-mobile-logo{
+      display: block;
+      height: 35px;
+      margin-top: 5px;
+   }
+}
+
+.middle-section{
+   display: flex;
+    flex: 1; 
+   max-width: 850px;
+   margin-left: 10px;
+   margin-right: 10px;
+}
+
+.searchbar{
+   color: white;
+   flex: 1;
+   width: 100%;
+   font-size: 16px;
+   padding-left: 15px;
+   height: 38px;
+   border: none;
+   border-top-left-radius: 4px;
+   border-bottom-left-radius: 4px;
+   border-top-right-radius: 0;
+   border-bottom-right-radius: 0;
+}
+
+.search-button{
+   width: 45px;
+   height: 38px;
+   background-color:  rgb(254, 189, 105);
+   border: none;
+   border-top-right-radius: 4px;
+   border-bottom-right-radius: 4px;
+   flex-shrink: 0;
+}
+
+.search-icon{
+   height: 22px;
+   margin-top: 2px;
+   margin-left: 3px;
+}
+
+.right-section{
+   /* background: black; */
+   width: 180px;
+   display: flex;
+   justify-content: end;
+   flex-shrink: 0;
+}
+
+.order-links{
+   color: white;
+}
+
+.return-text{
+   display: block;
+   font-size: 13px;
+}
+
+.order-text{
+   display: block;
+   font-size: 15px;
+   font-weight: 700;
+}
+
+.cart-links{
+   color: white;
+   display: flex;
+   align-items: center;
+   position: relative;
+}
+
+.cart-icon{
+   width: 50px;
+}
+
+.cart-text{
+   font-size: 18px;
+   font-weight: 700;
+margin-top: 10px;
+}
+
+.cart-quantity{
+   color: rgb(240, 136, 4);
+   font-size: 18px;
+   font-weight: 700;
+
+   position: absolute;
+   top: 4px;
+   left: 22px;
+
+   text-align: center;
+   /* background-color: aliceblue; */
+   width: 26px;
+}
