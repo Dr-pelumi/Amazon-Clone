@@ -1,0 +1,81 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", serif;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.amazon-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/* background-color: pink; */
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 60px;
+
+	padding: 0 15px;
+	color: white;
+	background-color: rgb(25 23 19);
+	/* background: pink;  */
+}
+.amazon-header-left {
+	max-width: 180px;
+}
+
+.header-link {
+	display: inline-block;
+	padding: 5px;
+	text-decoration: none;
+	cursor: pointer;
+	border-radius: 2px;
+	border: 1px solid black;
+}
+
+.amazon-logo {
+	width: 100px;
+	margin-top: 10px;
+}
+
+.amazon-mobile-logo {
+	display: none;
+}
+
+@media (max-width: 575px) {
+	.amazon-logo {
+		display: none;
+	}
+	.amazon-mobile-logo {
+		display: block;
+		height: 35px;
+		margin-top: 5px;
+	}
+}
+
+.middle-section {
+	display: flex;
+	flex: 1;
+	max-width: 850px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.searchbar {
+	color: white;
+	flex: 1;
+	width: 100%;
+	font-size: 16px;
+	padding-left: 15px;
+	height: 38px;
+	border: none;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
