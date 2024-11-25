@@ -292,7 +292,8 @@ border-top-right-radius: 8px;
 	height: 36px;
 	border-radius: 8px;
 	background-color: rgb(255, 216, 20);
-	border: 1px solid rgb(252 210 0);
+	border-color: 1px solid rgb(252 210 0);
+	border: none;
 }
 .buy-again-icon{
 	width: 25px;

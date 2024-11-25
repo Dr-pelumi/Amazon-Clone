@@ -79,3 +79,151 @@ body {
 	border-top-right-radius: 0;
 	border-bottom-right-radius: 0;
 }
+.search-button {
+	width: 45px;
+	height: 38px;
+	background-color: rgb(254, 189, 105);
+	border: none;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	flex-shrink: 0;
+}
+
+.searchbar:focus {
+	outline: 2px solid rgb(255, 153, 0);
+}
+
+.search-icon {
+	height: 22px;
+	margin-top: 2px;
+	margin-left: 3px;
+}
+.right-section {
+	/* background: black; */
+	width: 180px;
+	display: flex;
+	justify-content: end;
+	flex-shrink: 0;
+}
+
+.order-links {
+	color: white;
+}
+
+.return-text {
+	display: block;
+	font-size: 13px;
+}
+
+.order-text {
+	display: block;
+	font-size: 12px;
+	font-weight: 700;
+}
+.cart-links {
+	color: white;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.cart-icon {
+	width: 50px;
+}
+
+.cart-text {
+	font-size: 16px;
+	font-weight: 700;
+	margin-top: 10px;
+}
+
+.cart-quantity {
+	color: rgb(240, 136, 4);
+	font-size: 16px;
+	font-weight: 700;
+
+	position: absolute;
+	top: 4px;
+	left: 22px;
+
+	text-align: center;
+	/* background-color: aliceblue; */
+	width: 26px;
+}
+
+.main{
+   /* background-color: black; */
+   max-width: 850px;
+   margin-top: 90px;
+   margin-bottom: 100px;
+   padding: 0 30px; 
+   margin-right: auto;
+   margin-left: auto;
+}
+
+.back-to-orders-link{
+   display: inline-block;
+   margin-bottom: 30px;
+	font-size: 15px;
+	color: rgb(1, 124, 182);
+	cursor: pointer;
+}
+.delivery-date{
+   font-size: 25px;
+   font-weight: 700;
+   margin-bottom: 10px;
+}
+
+.product-info{
+   margin-bottom: 3px;
+}
+.product-image{
+   max-height: 150px;
+   max-width: 150px;
+   margin-top: 25px;
+   margin-bottom: 50px;
+}
+
+.progress-labels-container{
+   display: flex;
+   justify-content: space-between;
+   font-size: 30px;
+   font-weight: 500;
+   margin-bottom: 15px;
+}
+
+.current-status{
+   color: rgb(6, 125, 98);
+}
+
+@media(max-width: 575px) {
+	.progress-labels-container{
+		font-size: 16px;
+	}
+}
+@media(max-width: 450px) {
+	.progress-labels-container{
+		flex-direction: column;
+		margin-bottom: 5px;
+	}
+	.progress-label{
+		margin-bottom: 3px;
+	}
+}
+
+.progress-bar-container{
+	height: 25px;
+	width: 100%;
+
+	border: 1px solid rgb(200 200 200);
+	border-radius: 50px;
+	overflow: hidden;
+	
+}
+
+.progress-bar{
+	height: 100%;
+	background-color: green;
+	width: 50%;
+	border-radius: 50px;
+}
